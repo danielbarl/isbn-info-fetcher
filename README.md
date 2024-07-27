@@ -16,7 +16,7 @@ This script fetches book details (author, title, published date, publisher, thum
 1. Clone the repository:
     ```bash
     git clone https://github.com/danielbarl/isbn-info-fetcher.git
-    cd isbn-book-info-fetcher
+    cd isbn-info-fetcher
     ```
 
 2. Install the required Python packages:
