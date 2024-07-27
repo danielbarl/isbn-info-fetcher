@@ -41,8 +41,8 @@ This script fetches book details (author, title, published date, publisher, thum
 
 ### Output (`output.csv`)
 ```csv
-Author,Title,Published Date,Publisher,Thumbnail,Description
-"Paul Kalanithi","When Breath Becomes Air","2016-01-12","Random House","http://books.google.com/books/content?id=wZ4uCgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",""
-"Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein","Introduction to Algorithms","2009-07-31","MIT Press","http://books.google.com/books/content?id=2BdDwmF3P5EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",""
-"Brian W. Kernighan, Dennis M. Ritchie","The C Programming Language","1988","Prentice Hall","http://books.google.com/books/content?id=8G72QgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",""
+ISBN,Author,Title,Published Date,Publisher,Thumbnail,Description
+"9780143128540","Paul Kalanithi","When Breath Becomes Air","2016-01-12","Random House","http://books.google.com/books/content?id=wZ4uCgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",""
+"9780262033848","Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein","Introduction to Algorithms","2009-07-31","MIT Press","http://books.google.com/books/content?id=2BdDwmF3P5EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",""
+"9780131103627","Brian W. Kernighan, Dennis M. Ritchie","The C Programming Language","1988","Prentice Hall","http://books.google.com/books/content?id=8G72QgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",""
 ```
