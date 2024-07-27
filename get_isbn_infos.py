@@ -18,7 +18,7 @@ def get_book_info(isbn):
         publisher = book.get('publisher', '')
         thumbnail = book['imageLinks'].get('thumbnail', '') if 'imageLinks' in book else ''
         description = book.get('description', '')
-        return [authors, title, published_date, publisher, thumbnail, description]
+        return [isbn, authors, title, published_date, publisher, thumbnail, description]
     else:
         return None  # Return None if no book information is found
 
@@ -28,12 +28,15 @@ def main(input_file, output_file):
         isbns = infile.readlines()  # Read ISBNs from the input file
         writer = csv.writer(outfile)  # Initialize CSV writer
         # Write CSV header
-        writer.writerow(['Author', 'Title', 'Published Date', 'Publisher', 'Thumbnail', 'Description'])
+        writer.writerow(['ISBN', 'Author', 'Title', 'Published Date', 'Publisher', 'Thumbnail', 'Description'])
         for isbn in isbns:
             isbn = isbn.strip()  # Remove any leading/trailing whitespace
             book_info = get_book_info(isbn)  # Get book information
             if book_info:
                 writer.writerow(book_info)  # Write book information to CSV
+                print("[+] ISBN " + isbn + " added succesfully")
+            else:
+                print("[ERROR] No information found for ISBN " + isbn)
 
 if __name__ == "__main__":
     input_file = "input.txt"  # Change this to your input text file
