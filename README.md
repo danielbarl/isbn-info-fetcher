@@ -26,7 +26,7 @@ This script fetches book details (author, title, published date, publisher, thum
 
 3. Run the script:
     ```bash
-    python script.py
+    python get_isbn_infos.py
     ```
 
 ## Example
